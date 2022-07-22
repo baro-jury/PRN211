@@ -155,8 +155,7 @@ CREATE TABLE [Order](
 	[status] [bit] NOT NULL
 );
 GO
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (0, 'room11', 'S015', 3, 60000, 0)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (0, 'room22', 'V026', 1, 500000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (0, 'admin', 'V026', 1, 500000, 0)
 INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (1, 'admin', 'S007', 3, 30000, 1)
 INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (1, 'admin', 'V023', 2, 280000, 1)
 INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (1, 'admin', 'V026', 2, 1000000, 1)
