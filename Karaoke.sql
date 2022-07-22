@@ -151,15 +151,16 @@ CREATE TABLE [Order](
 	[user] [varchar](50) NOT NULL FOREIGN KEY ([user]) REFERENCES [Account]([userName]),
 	[service_id] [varchar](4) NOT NULL FOREIGN KEY ([service_id]) REFERENCES [Service]([service_id]),
 	[quantity] [int] NOT NULL,
-	[total_payment] [int] NOT NULL
+	[total_payment] [int] NOT NULL,
+	[status] [bit] NOT NULL
 );
 GO
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (0, 'room11', 'S015', 3, 60000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (0, 'room22', 'V026', 1, 500000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (1, 'admin', 'S007', 3, 30000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (1, 'admin', 'V023', 2, 280000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (1, 'admin', 'V026', 2, 1000000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (2, 'room11', 'S008', 3, 90000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (3, 'room22', 'V023', 2, 280000)
-INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment]) VALUES (3, 'room22', 'V026', 2, 1000000)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (0, 'room11', 'S015', 3, 60000, 0)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (0, 'room22', 'V026', 1, 500000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (1, 'admin', 'S007', 3, 30000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (1, 'admin', 'V023', 2, 280000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (1, 'admin', 'V026', 2, 1000000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (2, 'room11', 'S008', 3, 90000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (3, 'room22', 'V023', 2, 280000, 1)
+INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (3, 'room22', 'V026', 2, 1000000, 1)
 ------------------------------------------------------------------------------------------
