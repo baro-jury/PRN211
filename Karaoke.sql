@@ -147,12 +147,14 @@ INSERT [Bill] ([userName], [order_date], [payment_method], [status]) VALUES ('ro
 INSERT [Bill] ([userName], [order_date], [payment_method], [status]) VALUES ('room22', GETDATE(), N'Banking', 1)
 GO
 CREATE TABLE [Order](
+	[order_id] [int] IDENTITY(1,1) NOT NULL,
 	[bill_id] [int] NOT NULL,
 	[user] [varchar](50) NOT NULL FOREIGN KEY ([user]) REFERENCES [Account]([userName]),
 	[service_id] [varchar](4) NOT NULL FOREIGN KEY ([service_id]) REFERENCES [Service]([service_id]),
 	[quantity] [int] NOT NULL,
 	[total_payment] [int] NOT NULL,
-	[status] [bit] NOT NULL
+	[status] [bit] NOT NULL,
+	CONSTRAINT [order_pk] PRIMARY KEY ([order_id])
 );
 GO
 INSERT [Order] ([bill_id], [user], [service_id], [quantity], [total_payment], [status]) VALUES (0, 'admin', 'V026', 1, 500000, 0)
