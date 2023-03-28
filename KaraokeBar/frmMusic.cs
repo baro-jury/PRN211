@@ -20,17 +20,12 @@ namespace KaraokeBar
         public frmMusic()
         {
             InitializeComponent();
-            //menuForm.Show();
-            //menuForm.Visible = false;
         }
 
         public frmMusic(Account a)
         {
             InitializeComponent();
             CurrentAccount = a;
-            //menuForm = new frmMenu(a);
-            //menuForm.Show();
-            //menuForm.Visible = false;
         }
 
         #region Function

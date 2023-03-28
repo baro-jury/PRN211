@@ -70,3 +70,4 @@ D:\BaoDuy\FPT_Education\SE_term_5\PRN211\C#\Assignment\KaraokeBar\bin\Debug\net5
 D:\BaoDuy\FPT_Education\SE_term_5\PRN211\C#\Assignment\KaraokeBar\obj\Debug\net5.0-windows\KaraokeBar.frmAdmin.resources
 D:\BaoDuy\FPT_Education\SE_term_5\PRN211\C#\Assignment\KaraokeBar\obj\Debug\net5.0-windows\KaraokeBar.frmMusic.resources
 D:\BaoDuy\FPT_Education\SE_term_5\PRN211\C#\Assignment\KaraokeBar\obj\Debug\net5.0-windows\KaraokeBar.frmMenu.resources
+D:\BaoDuy\FPT_Education\SE_term_5\PRN211\C#\Assignment\KaraokeBar\obj\Debug\net5.0-windows\KaraokeBar.Properties.Resources.resources

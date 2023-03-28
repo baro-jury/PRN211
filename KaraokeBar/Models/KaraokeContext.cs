@@ -151,9 +151,9 @@ namespace KaraokeBar.Models
 
             modelBuilder.Entity<Order>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToTable("Order");
+
+                entity.Property(e => e.OrderId).HasColumnName("order_id");
 
                 entity.Property(e => e.BillId).HasColumnName("bill_id");
 
@@ -165,6 +165,8 @@ namespace KaraokeBar.Models
                     .IsUnicode(false)
                     .HasColumnName("service_id");
 
+                entity.Property(e => e.Status).HasColumnName("status");
+
                 entity.Property(e => e.TotalPayment).HasColumnName("total_payment");
 
                 entity.Property(e => e.User)
@@ -173,20 +175,14 @@ namespace KaraokeBar.Models
                     .IsUnicode(false)
                     .HasColumnName("user");
 
-                entity.HasOne(d => d.Bill)
-                    .WithMany()
-                    .HasForeignKey(d => d.BillId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Order__bill_id__31EC6D26");
-
                 entity.HasOne(d => d.Service)
-                    .WithMany()
+                    .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.ServiceId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Order__service_i__33D4B598");
 
                 entity.HasOne(d => d.UserNavigation)
-                    .WithMany()
+                    .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.User)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Order__user__32E0915F");

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Karaoke", "Karaoke\Karaoke.csproj", "{EB776DEC-5429-4CE8-AB75-A8E3171BFC2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaraokeBar", "KaraokeBar\KaraokeBar.csproj", "{3B550C48-D6F7-47F5-BF17-11ADE7B7B145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rebuildModel", "rebuildModel\rebuildModel.csproj", "{24B6EC0D-CC66-4195-8EE4-795F936D5DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB776DEC-5429-4CE8-AB75-A8E3171BFC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB776DEC-5429-4CE8-AB75-A8E3171BFC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB776DEC-5429-4CE8-AB75-A8E3171BFC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB776DEC-5429-4CE8-AB75-A8E3171BFC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B550C48-D6F7-47F5-BF17-11ADE7B7B145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B550C48-D6F7-47F5-BF17-11ADE7B7B145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B550C48-D6F7-47F5-BF17-11ADE7B7B145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B550C48-D6F7-47F5-BF17-11ADE7B7B145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B6EC0D-CC66-4195-8EE4-795F936D5DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B6EC0D-CC66-4195-8EE4-795F936D5DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B6EC0D-CC66-4195-8EE4-795F936D5DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B6EC0D-CC66-4195-8EE4-795F936D5DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0E66C7E-F529-4AE3-B36F-47A41A8B39A0}
+	EndGlobalSection
+EndGlobal
